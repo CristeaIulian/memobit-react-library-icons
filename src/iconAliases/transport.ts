@@ -1,0 +1,16 @@
+export const aliasesTransport: Record<string, string[]> = {
+    bus: ['transit', 'shuttle', 'transport', 'minibus', 'commute'],
+    car: ['vehicle', 'automobile', 'drive', 'auto', 'sedan', 'transport', 'road', 'ride'],
+    compass: ['navigation', 'direction', 'travel', 'map', 'north'],
+    location: ['map', 'coordinates', 'address', 'gps', 'destination', 'place', 'flag'],
+    map: ['location', 'navigation', 'directions', 'geography', 'route', 'atlas', 'cartography', 'folded'],
+    mapping: ['map', 'location', 'coordinates', 'navigation'],
+    pin: ['marker', 'thumbtack', 'fastener', 'needle', 'save', 'bookmark', 'flag'],
+    plane: ['flight', 'aircraft', 'airplane', 'travel', 'aviation', 'airline', 'fly', 'airport'],
+    ship: ['transport', 'water', 'ocean', 'boat', 'vessel', 'travel'],
+    speedometer: ['mileage', 'odometer', 'distance', 'speed', 'km', 'miles', 'travel', 'vehicle', 'odometer'],
+    taxi: ['transport', 'car', 'city', 'ride', 'yellow'],
+    train: ['railway', 'subway', 'metro', 'rail', 'locomotive', 'tram', 'underground', 'transit', 'commute'],
+    'transport-box': ['shipping', 'package', 'delivery', 'cargo'],
+    trip: ['journey', 'travel', 'suitcase', 'luggage', 'vacation', 'holiday', 'voyage', 'getaway'],
+};

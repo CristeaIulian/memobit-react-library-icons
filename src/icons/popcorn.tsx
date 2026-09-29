@@ -1,0 +1,3 @@
+export const popcorn = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+        <path d="M18 2a2 2 0 0 0-2 2c0 .37.11.71.28 1.01A2 2 0 0 0 14 7c0 .37.11.71.28 1.01A2 2 0 0 0 12 10a2 2 0 0 0-2-2c.17-.3.28-.64.28-1A2 2 0 0 0 8 5c.17-.3.28-.64.28-1A2 2 0 0 0 6 2a2 2 0 0 0-2 2 2 2 0 0 0 1.28 1.86L7 22h10l1.72-16.14A2 2 0 0 0 20 4a2 2 0 0 0-2-2zM9 20l-1-8h2l1 8H9zm3 0h-2l-1-8h4l-1 8zm3 0h-2l1-8h2l-1 8z" />
+    </svg>;

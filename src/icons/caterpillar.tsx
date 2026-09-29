@@ -1,0 +1,3 @@
+export const caterpillar = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+        <path d="M4 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm4 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm4 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm4-1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm4-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM4 9.5c0-.28.22-.5.5-.5H5V8H4.5A1.5 1.5 0 0 0 3 9.5v1A1.5 1.5 0 0 0 4.5 12H5v-1h-.5a.5.5 0 0 1-.5-.5v-1zm16.5 2.5H21v-1h-.5a.5.5 0 0 1-.5-.5v-1c0-.28.22-.5.5-.5H21V8h-.5A1.5 1.5 0 0 0 19 9.5v1a1.5 1.5 0 0 0 1.5 1.5z" />
+    </svg>;

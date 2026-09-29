@@ -1,0 +1,3 @@
+export const robot = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+        <path d="M12 2a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2zm8 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1v3h2v-3h10v3h2v-3h1a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2zm-1 8H5v-6h14v6zM9 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-3 2c-1 0-2 .5-2 1h4c0-.5-1-1-2-1zm0-7H11v2h2V7z" />
+    </svg>;

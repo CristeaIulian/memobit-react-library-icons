@@ -1,0 +1,3 @@
+export const fireworks = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+        <path d="M12 2.5 11 6h2l-1-3.5zm4.5 2-2.5 2.5 1.5 1L18 5.5l-1.5-1zM7.5 4.5 6 5.5l2.5 2.5L10 6.5 7.5 4.5zM12 7a5 5 0 1 0 0 10A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm8 .5h-3.5l1 2H20v-2zm-13 0H3.5v2h2.5l1-2zm9.5 6-1.5 1 2.5 2.5 1.5-1-2.5-2.5zm-9 0L5.5 18l1.5 1 2.5-2.5-1.5-1zM12 18.5l1 3.5h-2l1-3.5z" />
+    </svg>;

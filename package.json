@@ -1,0 +1,87 @@
+{
+  "name": "@memobit/icons",
+  "version": "1.0.0",
+  "description": "495 hand-built SVG icons for the Memobit apps — individually exported and tree-shakeable, with categories and search aliases. TypeScript-first, ESM-only, React 19.",
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "svg-icons",
+    "icon-set",
+    "typescript",
+    "tree-shakeable",
+    "memobit"
+  ],
+  "author": "Iulian Cristea <iulianx@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://react.memobit.ro/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristeaIulian/memobit-react-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CristeaIulian/memobit-react-icons/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./map": {
+      "types": "./dist/map.d.ts",
+      "import": "./dist/map.js"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.d.ts",
+      "import": "./dist/icons/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && npm pack",
+    "release": "npm run build && npm publish",
+    "ship": "npm version patch && npm run release && git push --follow-tags",
+    "ship:minor": "npm version minor && npm run release && git push --follow-tags",
+    "ship:major": "npm version major && npm run release && git push --follow-tags",
+    "prepublishOnly": "vite build",
+    "generate:icon-names": "node scripts/generate-icon-names.mjs",
+    "dev": "vite build --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,json}\""
+  },
+  "peerDependencies": {
+    "react": "19.2.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@types/react": "19.2.14",
+    "@vitejs/plugin-react": "6.0.4",
+    "esbuild": "0.28.1",
+    "eslint": "9.39.4",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-import-x": "4.17.1",
+    "eslint-plugin-prettier": "5.5.5",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-simple-import-sort": "13.0.0",
+    "globals": "17.6.0",
+    "prettier": "3.8.3",
+    "react": "19.2.7",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.59.3",
+    "vite": "8.1.5",
+    "vite-plugin-dts": "5.0.0"
+  }
+}

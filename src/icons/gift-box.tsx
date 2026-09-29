@@ -1,0 +1,3 @@
+export const giftBox = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+        <path d="M20 6h-2.18A3 3 0 0 0 15 4h-1.19A3 3 0 0 0 9 4H7.82A3 3 0 0 0 5 6H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7h1a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-5-2a1 1 0 0 1 1 1v1h-2a3 3 0 0 0-.19-1.1A1 1 0 0 1 15 4zm-5.81.9A3 3 0 0 0 9 6H7a1 1 0 0 1 1.19-1.1zM11 19H7v-7h4v7zm0-9H4V8h7v2zm6 9h-4v-7h4v7zm2-9h-6V8h7v2h-1z" />
+    </svg>;
