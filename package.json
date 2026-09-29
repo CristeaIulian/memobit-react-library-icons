@@ -17,10 +17,10 @@
   "homepage": "https://react.memobit.ro/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CristeaIulian/memobit-react-icons.git"
+    "url": "git+https://github.com/CristeaIulian/memobit-react-library-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/CristeaIulian/memobit-react-icons/issues"
+    "url": "https://github.com/CristeaIulian/memobit-react-library-icons/issues"
   },
   "publishConfig": {
     "access": "public"
