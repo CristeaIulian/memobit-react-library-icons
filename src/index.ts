@@ -15,7 +15,6 @@ export {
     otherCategory,
 } from './iconCategories';
 export type { IconName } from './iconNames';
-
 export { active } from './icons/active';
 export { afternoon } from './icons/afternoon';
 export { airConditioning } from './icons/air-conditioning';

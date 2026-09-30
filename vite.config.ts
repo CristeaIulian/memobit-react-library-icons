@@ -25,11 +25,14 @@ export default defineConfig({
             entry: {
                 index: resolve(__dirname, 'src/index.ts'),
                 map: resolve(__dirname, 'src/map.ts'),
+                vite: resolve(__dirname, 'src/vite.ts'),
             },
             formats: ['es'],
         },
         rollupOptions: {
-            external: ['react', 'react/jsx-runtime'],
+            // /^node:/ covers the Vite plugin entry's builtins; naming them one by one meant
+            // node:module silently became Vite's browser stub and the plugin threw at build time.
+            external: ['react', 'react/jsx-runtime', /^node:/],
             output: {
                 preserveModules: true,
                 preserveModulesRoot: 'src',

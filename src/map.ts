@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 
+import { IconName } from './iconNames';
 import { active } from './icons/active';
 import { afternoon } from './icons/afternoon';
 import { airConditioning } from './icons/air-conditioning';
@@ -495,8 +496,6 @@ import { workout } from './icons/workout';
 import { wrench } from './icons/wrench';
 import { yoga } from './icons/yoga';
 import { youtube } from './icons/youtube';
-
-import { IconName } from './iconNames';
 
 export const iconMap: Record<IconName, ReactElement> = {
     'air-conditioning': airConditioning,
