@@ -37,6 +37,11 @@ export interface MemobitIconsOptions {
 const SOURCE_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.jsx', '.mts', '.mjs']);
 const SKIP_DIRECTORIES = new Set(['node_modules', 'dist', 'build', '.git', 'coverage']);
 const MAP_SPECIFIER = '@memobit/icons/map';
+// A package can declare the icons its own components hardcode, sparing us a regex sweep of
+// its build output. @memobit/libs emits this. Scanning minified output instead is a blunt
+// instrument: its EmojiPicker keyword tables alone contribute ~190 words that happen to be
+// icon names, and every one would be kept for nothing.
+const USAGE_MANIFEST = 'memobit-icons.json';
 const VIRTUAL_ID = '\0virtual:memobit-icon-map';
 
 // Icon names are lowercase kebab-case, so this catches every quoted string that could be
@@ -91,13 +96,44 @@ const resolvePackageDist = (root: string, packageName: string): string | null =>
     return existsSync(conventional) ? conventional : null;
 };
 
+const readUsageManifest = (distDir: string): string[] | null => {
+    try {
+        const parsed: unknown = JSON.parse(readFileSync(join(distDir, USAGE_MANIFEST), 'utf8'));
+
+        if (typeof parsed !== 'object' || parsed === null || !('icons' in parsed) || !Array.isArray(parsed.icons)) {
+            return null;
+        }
+
+        return parsed.icons.filter((name): name is string => typeof name === 'string' && name in iconModules);
+    } catch {
+        return null;
+    }
+};
+
 const scanForIconNames = (root: string, scanDirs: readonly string[], scanPackages: readonly string[]): Set<string> => {
     const names = new Set<string>();
+    const directories = scanDirs.map(dir => resolve(root, dir));
 
-    const directories = [
-        ...scanDirs.map(dir => resolve(root, dir)),
-        ...scanPackages.map(name => resolvePackageDist(root, name)).filter((dir): dir is string => dir !== null),
-    ];
+    for (const packageName of scanPackages) {
+        const distDir = resolvePackageDist(root, packageName);
+
+        if (distDir === null) {
+            continue;
+        }
+
+        const declared = readUsageManifest(distDir);
+
+        if (declared === null) {
+            // No manifest — an older release, or a package that never published one. Sweep
+            // its output instead: over-keeping wastes bytes, missing a name breaks a render.
+            directories.push(distDir);
+            continue;
+        }
+
+        for (const name of declared) {
+            names.add(name);
+        }
+    }
 
     for (const directory of directories) {
         for (const file of collectSourceFiles(directory, [])) {
