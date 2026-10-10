@@ -246,6 +246,7 @@ export type IconName =
     | 'ice-cream'
     | 'identity'
     | 'image'
+    | 'imdb'
     | 'import'
     | 'inactive'
     | 'incognito'

@@ -512,7 +512,7 @@ export const iconCategoryDefinitions: IconCategory[] = [
     {
         id: 'brands',
         label: 'Brands',
-        icons: ['angular', 'github', 'linkedin', 'scss'],
+        icons: ['angular', 'github', 'imdb', 'linkedin', 'scss'],
     },
     {
         id: 'actions',

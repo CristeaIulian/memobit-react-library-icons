@@ -249,6 +249,7 @@ export const iconModules: Readonly<Record<string, string>> = {
     'ice-cream': 'iceCream',
     'identity': 'identity',
     'image': 'image',
+    'imdb': 'imdb',
     'import': 'import_',
     'inactive': 'inactive',
     'incognito': 'incognito',

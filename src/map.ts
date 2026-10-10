@@ -245,6 +245,7 @@ import { humidity } from './icons/humidity';
 import { iceCream } from './icons/ice-cream';
 import { identity } from './icons/identity';
 import { image } from './icons/image';
+import { imdb } from './icons/imdb';
 import { import_ } from './icons/import';
 import { inactive } from './icons/inactive';
 import { incognito } from './icons/incognito';
@@ -760,6 +761,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     humidity,
     identity,
     image,
+    imdb,
     import: import_,
     inactive,
     incognito,

@@ -259,6 +259,7 @@ export { humidity } from './icons/humidity';
 export { iceCream } from './icons/ice-cream';
 export { identity } from './icons/identity';
 export { image } from './icons/image';
+export { imdb } from './icons/imdb';
 export { import_ } from './icons/import';
 export { inactive } from './icons/inactive';
 export { incognito } from './icons/incognito';
