@@ -23,9 +23,9 @@ export default defineConfig({
     build: {
         lib: {
             entry: {
-                index: resolve(__dirname, 'src/index.ts'),
-                map: resolve(__dirname, 'src/map.ts'),
-                vite: resolve(__dirname, 'src/vite.ts'),
+                index: resolve(import.meta.dirname, 'src/index.ts'),
+                map: resolve(import.meta.dirname, 'src/map.ts'),
+                vite: resolve(import.meta.dirname, 'src/vite.ts'),
             },
             formats: ['es'],
         },
