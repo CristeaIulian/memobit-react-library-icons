@@ -497,6 +497,7 @@ import { workout } from './icons/workout';
 import { wrench } from './icons/wrench';
 import { yoga } from './icons/yoga';
 import { youtube } from './icons/youtube';
+import { createIconRegistry } from './registry';
 
 export const iconMap: Record<IconName, ReactElement> = {
     'air-conditioning': airConditioning,
@@ -996,3 +997,11 @@ export const iconMap: Record<IconName, ReactElement> = {
     uranus,
     venus,
 };
+
+// The full map has nothing left to load; the registry gives it the same API as a lazy build.
+const registry = createIconRegistry(iconMap);
+
+export const canLoadMoreIcons = registry.canLoadMore;
+export const getIcon = registry.getIcon;
+export const loadIcon = registry.loadIcon;
+export const loadAllIcons = registry.loadAllIcons;

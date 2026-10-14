@@ -39,6 +39,10 @@
       "types": "./dist/map.d.ts",
       "import": "./dist/map.js"
     },
+    "./registry": {
+      "types": "./dist/registry.d.ts",
+      "import": "./dist/registry.js"
+    },
     "./vite": {
       "types": "./dist/vite.d.ts",
       "import": "./dist/vite.js"

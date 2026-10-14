@@ -17,9 +17,16 @@ export interface MemobitIconsOptions {
     /**
      * Names the source scan cannot see because they only exist at runtime — a value from a
      * database, an API response, or an icon picker. Pass 'all' to keep the whole set, which
-     * is what an app with a picker needs.
+     * is what an app with a picker needs unless it uses `lazy`.
      */
     include?: readonly string[] | 'all';
+    /**
+     * Keep the scanned icons in the startup bundle and load any other icon the first time it
+     * renders, one small chunk per icon; `IconPicker` loads the whole set when it opens. For
+     * an app whose names come from its data, where `include: 'all'` would put every icon in
+     * the startup bundle. Cannot be combined with `include: 'all'`.
+     */
+    lazy?: boolean;
     /** Directories to scan, relative to `root`. Defaults to ['src']. */
     scanDirs?: readonly string[];
     /**
@@ -156,11 +163,32 @@ const scanForIconNames = (root: string, scanDirs: readonly string[], scanPackage
     return names;
 };
 
-const buildMapModule = (names: readonly string[]): string => {
+// Mirrors the exports of src/map.ts, so `@memobit/libs` sees one API whichever map it gets.
+// In lazy mode every icon not kept statically gets a loader, so each one is its own chunk.
+const buildMapModule = (names: readonly string[], lazy: boolean): string => {
     const imports = names.map(name => `import { ${iconModules[name]} } from '@memobit/icons/icons/${name}';`).join('\n');
     const entries = names.map(name => `    '${name}': ${iconModules[name]},`).join('\n');
+    const kept = new Set(names);
+    const loaders = Object.keys(iconModules)
+        .filter(name => !kept.has(name))
+        .map(name => `    '${name}': () => import('@memobit/icons/icons/${name}').then(module => module.${iconModules[name]}),`)
+        .join('\n');
+    const registry = lazy ? `createIconRegistry(iconMap, {\n${loaders}\n})` : 'createIconRegistry(iconMap)';
 
-    return `${imports}\n\nexport const iconMap = {\n${entries}\n};\n`;
+    return [
+        `import { createIconRegistry } from '@memobit/icons/registry';`,
+        imports,
+        '',
+        `export const iconMap = {\n${entries}\n};`,
+        '',
+        `const registry = ${registry};`,
+        '',
+        'export const canLoadMoreIcons = registry.canLoadMore;',
+        'export const getIcon = registry.getIcon;',
+        'export const loadIcon = registry.loadIcon;',
+        'export const loadAllIcons = registry.loadAllIcons;',
+        '',
+    ].join('\n');
 };
 
 /**
@@ -176,10 +204,15 @@ const buildMapModule = (names: readonly string[]): string => {
  * invisible to any source scan, and trimming it away would break icons at runtime with no
  * build error. An app that does not use this plugin keeps the full set and behaves exactly
  * as before. An app whose names are user-chosen — anything with an icon picker — should
- * pass `include: 'all'`, which keeps everything and simply does nothing.
+ * pass `lazy: true`, which keeps the scanned icons up front and fetches the rest as they
+ * render, or `include: 'all'`, which keeps everything and simply does nothing.
  */
 export const memobitIcons = (options: MemobitIconsOptions = {}): TrimPlugin => {
-    const { include = [], scanDirs = ['src'], scanPackages = ['@memobit/libs'], root = process.cwd(), debug = false } = options;
+    const { include = [], lazy = false, scanDirs = ['src'], scanPackages = ['@memobit/libs'], root = process.cwd(), debug = false } = options;
+
+    if (lazy && include === 'all') {
+        throw new Error(`[memobit-icons] \`lazy\` keeps only the scanned icons up front, so it cannot be combined with include: 'all'.`);
+    }
 
     return {
         name: 'memobit-icons-trim',
@@ -195,7 +228,7 @@ export const memobitIcons = (options: MemobitIconsOptions = {}): TrimPlugin => {
             }
 
             if (include === 'all') {
-                return buildMapModule(Object.keys(iconModules));
+                return buildMapModule(Object.keys(iconModules), false);
             }
 
             const names = scanForIconNames(root, scanDirs, scanPackages);
@@ -211,10 +244,11 @@ export const memobitIcons = (options: MemobitIconsOptions = {}): TrimPlugin => {
             const kept = [...names].sort();
 
             if (debug) {
-                console.log(`[memobit-icons] keeping ${kept.length} of ${Object.keys(iconModules).length} icons: ${kept.join(', ')}`);
+                const rest = lazy ? ' up front, the rest load on demand' : '';
+                console.log(`[memobit-icons] keeping ${kept.length} of ${Object.keys(iconModules).length} icons${rest}: ${kept.join(', ')}`);
             }
 
-            return buildMapModule(kept);
+            return buildMapModule(kept, lazy);
         },
     };
 };

@@ -25,6 +25,7 @@ export default defineConfig({
             entry: {
                 index: resolve(import.meta.dirname, 'src/index.ts'),
                 map: resolve(import.meta.dirname, 'src/map.ts'),
+                registry: resolve(import.meta.dirname, 'src/registry.ts'),
                 vite: resolve(import.meta.dirname, 'src/vite.ts'),
             },
             formats: ['es'],

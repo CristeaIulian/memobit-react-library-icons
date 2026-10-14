@@ -41,6 +41,16 @@ importing it pulls in the whole set and defeats tree-shaking. Reach for it only 
 name is not known until runtime — for example a value chosen through a picker and
 persisted to a database.
 
+The same subpath exports `getIcon(name)`, `loadIcon(name)`, `loadAllIcons()` and
+`canLoadMoreIcons`. With the full map they simply read it. With the Vite plugin's
+`lazy: true`, only the icons found in the app's source ship up front; any other icon is
+fetched as its own small chunk the first time `loadIcon` asks for it, and `loadAllIcons`
+fetches the rest of the set, which is what an icon picker needs.
+
+```ts
+memobitIcons({ root: import.meta.dirname, lazy: true });
+```
+
 ### Metadata
 
 ```ts
