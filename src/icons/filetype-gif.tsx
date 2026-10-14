@@ -7,7 +7,11 @@
         x="0px"
         y="0px"
         viewBox="0 0 115.28 122.88"
-        xmlSpace="preserve" fill="currentColor" width="1em" height="1em">
+        xmlSpace="preserve"
+        fill="currentColor"
+        width="1em"
+        height="1em"
+    >
         <style type="text/css">{`.st0{fillRule:evenodd;clipRule:evenodd;}`}</style>
         <g>
             <path

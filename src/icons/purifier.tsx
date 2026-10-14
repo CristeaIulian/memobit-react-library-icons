@@ -13,7 +13,8 @@ export const purifier = (
             ></path>{' '}
             <path d="M7 15L2.5 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>{' '}
             <path d="M17 15L21.5 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>{' '}
-            <ellipse cx="15" cy="10.5" rx="1" ry="1.5" fill="currentColor"></ellipse> <ellipse cx="9" cy="10.5" rx="1" ry="1.5" fill="currentColor"></ellipse>{' '}
+            <ellipse cx="15" cy="10.5" rx="1" ry="1.5" fill="currentColor"></ellipse>{' '}
+            <ellipse cx="9" cy="10.5" rx="1" ry="1.5" fill="currentColor"></ellipse>{' '}
         </g>
     </svg>
 );

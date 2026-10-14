@@ -6,7 +6,10 @@
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 31.653 31.653"
-        xmlSpace="preserve" width="1em" height="1em">
+        xmlSpace="preserve"
+        width="1em"
+        height="1em"
+    >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">

@@ -1,11 +1,5 @@
 export const fondue = (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 511.999 511.999"
-        fill="currentColor"
-        width="1em"
-        height="1em"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999" fill="currentColor" width="1em" height="1em">
         <circle cx="139.611" cy="216.523" r="8.12"></circle>
         <circle cx="372.385" cy="151.563" r="8.12"></circle>
         <circle cx="172.091" cy="249.003" r="8.12"></circle>

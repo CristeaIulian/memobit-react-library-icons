@@ -6,14 +6,7 @@
 // known until runtime.
 
 export { iconAliases } from './iconAliases';
-export {
-    type IconCategory,
-    iconCategoryById,
-    iconCategoryByPath,
-    iconCategoryDefinitions,
-    OTHER_CATEGORY_ID,
-    otherCategory,
-} from './iconCategories';
+export { type IconCategory, iconCategoryById, iconCategoryByPath, iconCategoryDefinitions, OTHER_CATEGORY_ID, otherCategory } from './iconCategories';
 export type { IconName } from './iconNames';
 export { active } from './icons/active';
 export { afternoon } from './icons/afternoon';

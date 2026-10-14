@@ -7,7 +7,10 @@ export const tree = (
         viewBox="0 0 64 64"
         enableBackground="new 0 0 64 64"
         xmlSpace="preserve"
-        fill="currentColor" width="1em" height="1em">
+        fill="currentColor"
+        width="1em"
+        height="1em"
+    >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">

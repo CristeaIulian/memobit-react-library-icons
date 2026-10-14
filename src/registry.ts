@@ -70,7 +70,12 @@ export const createIconRegistry = (staticIcons: Readonly<Record<string, ReactEle
 
             allIcons = Promise.all(names.map(loadIcon)).then(
                 // Static names come first in the map, so sort to give pickers a stable alphabetical order.
-                () => Object.fromEntries(Object.keys(icons).sort().map(name => [name, icons[name]])),
+                () =>
+                    Object.fromEntries(
+                        Object.keys(icons)
+                            .sort()
+                            .map(name => [name, icons[name]])
+                    ),
                 (error: unknown) => {
                     allIcons = null;
                     throw error;
