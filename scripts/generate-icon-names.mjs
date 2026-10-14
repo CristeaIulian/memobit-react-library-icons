@@ -8,8 +8,8 @@
 // Run after editing map.ts: `npm run generate:icon-names`
 
 import { readFileSync, writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const iconMapPath = join(here, '../src/map.ts');
