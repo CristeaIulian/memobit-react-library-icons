@@ -16,7 +16,7 @@ export default defineConfig({
             // Without these the declarations land in dist/src/ and the "types" paths
             // in package.json exports do not resolve.
             entryRoot: 'src',
-            outDir: 'dist',
+            outDirs: 'dist',
         }),
     ],
     build: {
