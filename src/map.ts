@@ -101,6 +101,7 @@ import { clear } from './icons/clear';
 import { clipboard } from './icons/clipboard';
 import { closet } from './icons/closet';
 import { cloud } from './icons/cloud';
+import { coatRack } from './icons/coat-rack';
 import { coffee } from './icons/coffee';
 import { comment } from './icons/comment';
 import { compass } from './icons/compass';
@@ -262,6 +263,7 @@ import { knife } from './icons/knife';
 import { laboratory } from './icons/laboratory';
 import { language } from './icons/language';
 import { lantern } from './icons/lantern';
+import { laundry } from './icons/laundry';
 import { layers } from './icons/layers';
 import { leaf } from './icons/leaf';
 import { lemon } from './icons/lemon';
@@ -322,6 +324,7 @@ import { nose } from './icons/nose';
 import { notFound } from './icons/not-found';
 import { notes } from './icons/notes';
 import { notice } from './icons/notice';
+import { officeDesk } from './icons/office-desk';
 import { offline } from './icons/offline';
 import { oldPerson } from './icons/old-person';
 import { olives } from './icons/olives';
@@ -522,6 +525,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     'caret-up': caretUp,
     'cd-dvd': cdDvd,
     'christmas-tree': christmasTree,
+    'coat-rack': coatRack,
     'credit-card': creditCard,
     'crystal-globe': crystalGlobe,
     'deselect-all': deselectAll,
@@ -576,6 +580,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     'menu-hamburger': menuHamburger,
     'musical-note': musicalNote,
     'not-found': notFound,
+    'office-desk': officeDesk,
     'old-person': oldPerson,
     'police-man': policeMan,
     'romania-flag': romaniaFlag,
@@ -996,6 +1001,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     storm,
     uranus,
     venus,
+    laundry,
 };
 
 // The full map has nothing left to load; the registry gives it the same API as a lazy build.

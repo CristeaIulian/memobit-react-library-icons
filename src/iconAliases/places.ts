@@ -25,5 +25,8 @@ export const aliasesPlaces: Record<string, string[]> = {
     balcony: ['terrace', 'veranda', 'railing', 'patio', 'loggia', 'outdoor'],
     closet: ['wardrobe', 'cupboard', 'armoire', 'storage', 'dressing', 'cabinet'],
     sofa: ['couch', 'settee', 'lounge', 'seating', 'living-room', 'furniture'],
+    'coat-rack': ['hallway', 'entrance', 'entryway', 'coat', 'hanger', 'hooks', 'foyer', 'cloakroom'],
+    laundry: ['laundry-room', 'clothesline', 'washing', 'clothes', 't-shirt', 'utility-room', 'drying'],
+    'office-desk': ['office', 'desk', 'workstation', 'study', 'home-office', 'computer', 'work'],
     furniture: ['furnishing', 'interior', 'home', 'fittings', 'decor', 'cabinet', 'table'],
 };
