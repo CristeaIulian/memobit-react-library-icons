@@ -68,6 +68,7 @@
     "ship:major": "npm version major && npm run release && git push --follow-tags",
     "prepublishOnly": "vite build",
     "generate:icon-names": "node scripts/generate-icon-names.mjs",
+    "strip:svg-titles": "node scripts/strip-svg-titles.mjs",
     "dev": "vite build --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

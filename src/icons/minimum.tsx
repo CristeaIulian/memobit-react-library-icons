@@ -3,8 +3,6 @@
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
-            {' '}
-            <title>value-minimum</title>{' '}
             <g id="Layer_2" data-name="Layer 2">
                 {' '}
                 <g id="invisible_box" data-name="invisible box">

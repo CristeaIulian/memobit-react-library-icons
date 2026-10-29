@@ -3,7 +3,6 @@
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
-            <title></title>
             <path d="M19,21H5V10c0-7,7-8,7-8h0s7,1,7,8Z"></path>
             <path d="M7,16H17a4,4,0,0,1,4,4v1a0,0,0,0,1,0,0H3a0,0,0,0,1,0,0V20A4,4,0,0,1,7,16Z"></path>
             <path

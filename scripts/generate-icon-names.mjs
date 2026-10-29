@@ -5,15 +5,20 @@
 // index.d.ts to embed the entire 475-entry iconMap object type, which
 // dominated DTS build time. An explicit union keeps IconName flat.
 //
-// Run after editing map.ts: `npm run generate:icon-names`
+// Run after editing map.ts: `npm run generate:icon-names`. It also strips any <title>
+// or <desc> a newly added icon brought along from its source SVG.
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { stripSvgTitles } from './strip-svg-titles.mjs';
+
 const here = dirname(fileURLToPath(import.meta.url));
 const iconMapPath = join(here, '../src/map.ts');
 const outPath = join(here, '../src/iconNames.ts');
+
+stripSvgTitles();
 
 const source = readFileSync(iconMapPath, 'utf8');
 const lines = source.split(/\r?\n/);

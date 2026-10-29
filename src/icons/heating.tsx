@@ -3,7 +3,6 @@ export const heating = (
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
-            <defs></defs>
             <rect
                 style={{ fill: 'none', stroke: 'currentColor', strokeMiterlimit: 10, strokeWidth: '1.91px' }}
                 x="9.15"
