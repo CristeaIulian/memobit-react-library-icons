@@ -70,6 +70,23 @@ import {
 - `iconCategoryDefinitions` — the categories, each with its icon names.
 - `iconAliases` — search synonyms per icon, used by the icon picker.
 
+### Animated icons
+
+```tsx
+import { AnimatedIcon } from '@memobit/libs';
+
+<AnimatedIcon name="running" size="sm" />;
+```
+
+A separate set behind `@memobit/icons/animated`, for something happening right now (motion
+in a room, a job running). It exports `animatedIconMap`, the `AnimatedIconName` union and
+`animatedIconDescriptions`. These icons move on their own (SMIL inside the SVG, no CSS
+needed), may use strokes, and stay out of `iconMap`, `IconName`, the categories and the
+Vite trim plugin.
+
+To add one: put `src/animated/<kebab-name>.tsx` next to `running.tsx`, then add it to
+`animatedIconMap` and `animatedIconDescriptions` in `src/animated.ts`.
+
 ## Adding an icon
 
 1. Add `src/icons/<kebab-name>.tsx` exporting a camelCase const.
