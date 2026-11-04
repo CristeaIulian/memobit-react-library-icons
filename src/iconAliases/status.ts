@@ -24,4 +24,5 @@ export const aliasesStatus: Record<string, string[]> = {
     unassociated: ['unlinked', 'disconnected', 'separate', 'orphan'],
     wait: ['loading', 'pending', 'spinner', 'progress'],
     warning: ['alert', 'caution', 'danger', 'attention'],
+    'view-off': ['hidden', 'hide', 'invisible', 'eye-off', 'conceal', 'private'],
 };

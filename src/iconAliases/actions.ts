@@ -11,4 +11,5 @@ export const aliasesActions: Record<string, string[]> = {
     settings: ['preferences', 'config', 'options', 'gear', 'configure'],
     synchronize: ['sync', 'update', 'refresh', 'reload'],
     upload: ['import', 'add', 'send', 'transfer'],
+    'invert-selection': ['invert', 'inverse', 'swap', 'selection', 'toggle'],
 };

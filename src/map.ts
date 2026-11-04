@@ -48,6 +48,7 @@ import { bill } from './icons/bill';
 import { birthdayCake } from './icons/birthday-cake';
 import { blood } from './icons/blood';
 import { blueberries } from './icons/blueberries';
+import { blur } from './icons/blur';
 import { bones } from './icons/bones';
 import { book } from './icons/book';
 import { bow } from './icons/bow';
@@ -58,6 +59,7 @@ import { briefcase } from './icons/briefcase';
 import { brightness } from './icons/brightness';
 import { brokenHeart } from './icons/broken-heart';
 import { broom } from './icons/broom';
+import { brush } from './icons/brush';
 import { bug } from './icons/bug';
 import { building } from './icons/building';
 import { bullet } from './icons/bullet';
@@ -99,6 +101,7 @@ import { christmasTree } from './icons/christmas-tree';
 import { cigarette } from './icons/cigarette';
 import { clear } from './icons/clear';
 import { clipboard } from './icons/clipboard';
+import { cloneStamp } from './icons/clone-stamp';
 import { closet } from './icons/closet';
 import { cloud } from './icons/cloud';
 import { coatRack } from './icons/coat-rack';
@@ -116,6 +119,7 @@ import { correlation } from './icons/correlation';
 import { cow } from './icons/cow';
 import { cpu } from './icons/cpu';
 import { creditCard } from './icons/credit-card';
+import { crop } from './icons/crop';
 import { crystalGlobe } from './icons/crystal-globe';
 import { cube } from './icons/cube';
 import { cucumber } from './icons/cucumber';
@@ -156,14 +160,17 @@ import { empty } from './icons/empty';
 import { endocrine } from './icons/endocrine';
 import { enlarge } from './icons/enlarge';
 import { equalizer } from './icons/equalizer';
+import { eraser } from './icons/eraser';
 import { evening } from './icons/evening';
 import { expense } from './icons/expense';
 import { export_ } from './icons/export';
 import { externalLink } from './icons/external-link';
+import { eyedropper } from './icons/eyedropper';
 import { fan } from './icons/fan';
 import { favorite } from './icons/favorite';
 import { fibers } from './icons/fibers';
 import { file } from './icons/file';
+import { fileAdd } from './icons/file-add';
 import { filetypeAvi } from './icons/filetype-avi';
 import { filetypeBat } from './icons/filetype-bat';
 import { filetypeC } from './icons/filetype-c';
@@ -227,11 +234,13 @@ import { glass } from './icons/glass';
 import { gloves } from './icons/gloves';
 import { glycemicIndex } from './icons/glycemic-index';
 import { goat } from './icons/goat';
+import { gradient } from './icons/gradient';
 import { graduation } from './icons/graduation';
 import { grid } from './icons/grid';
 import { group } from './icons/group';
 import { gun } from './icons/gun';
 import { hammer } from './icons/hammer';
+import { hand } from './icons/hand';
 import { handshake } from './icons/handshake';
 import { hd } from './icons/hd';
 import { headphones } from './icons/headphones';
@@ -254,6 +263,7 @@ import { information } from './icons/information';
 import { ingredients } from './icons/ingredients';
 import { inkCartridge } from './icons/ink-cartridge';
 import { insurance } from './icons/insurance';
+import { invertSelection } from './icons/invert-selection';
 import { irEmitter } from './icons/ir-emitter';
 import { job } from './icons/job';
 import { joystick } from './icons/joystick';
@@ -263,6 +273,7 @@ import { knife } from './icons/knife';
 import { laboratory } from './icons/laboratory';
 import { language } from './icons/language';
 import { lantern } from './icons/lantern';
+import { lasso } from './icons/lasso';
 import { laundry } from './icons/laundry';
 import { layers } from './icons/layers';
 import { leaf } from './icons/leaf';
@@ -282,11 +293,14 @@ import { logout } from './icons/logout';
 import { lollipop } from './icons/lollipop';
 import { lunch } from './icons/lunch';
 import { lungs } from './icons/lungs';
+import { magicWand } from './icons/magic-wand';
 import { magnet } from './icons/magnet';
 import { mail } from './icons/mail';
 import { manage } from './icons/manage';
 import { map } from './icons/map';
 import { mapping } from './icons/mapping';
+import { marqueeEllipse } from './icons/marquee-ellipse';
+import { marqueeRectangle } from './icons/marquee-rectangle';
 import { mars } from './icons/mars';
 import { meat } from './icons/meat';
 import { meet } from './icons/meet';
@@ -308,6 +322,7 @@ import { moon } from './icons/moon';
 import { morning } from './icons/morning';
 import { motion } from './icons/motion';
 import { mouse } from './icons/mouse';
+import { move } from './icons/move';
 import { movie } from './icons/movie';
 import { mushroom } from './icons/mushroom';
 import { musicalNote } from './icons/musical-note';
@@ -334,10 +349,12 @@ import { other } from './icons/other';
 import { outdoor } from './icons/outdoor';
 import { ownership } from './icons/ownership';
 import { paint } from './icons/paint';
+import { paintBucket } from './icons/paint-bucket';
 import { pause } from './icons/pause';
 import { pawn } from './icons/pawn';
 import { peanut } from './icons/peanut';
 import { pear } from './icons/pear';
+import { pencil } from './icons/pencil';
 import { penguin } from './icons/penguin';
 import { pension } from './icons/pension';
 import { pepper } from './icons/pepper';
@@ -405,6 +422,8 @@ import { security } from './icons/security';
 import { seeds } from './icons/seeds';
 import { sequence } from './icons/sequence';
 import { settings } from './icons/settings';
+import { shapes } from './icons/shapes';
+import { sharpen } from './icons/sharpen';
 import { shield } from './icons/shield';
 import { ship } from './icons/ship';
 import { shoppingCart } from './icons/shopping-cart';
@@ -418,6 +437,7 @@ import { skull } from './icons/skull';
 import { smartphone } from './icons/smartphone';
 import { smb } from './icons/smb';
 import { smokeDetector } from './icons/smoke-detector';
+import { smudge } from './icons/smudge';
 import { snake } from './icons/snake';
 import { snow } from './icons/snow';
 import { snowman } from './icons/snowman';
@@ -428,6 +448,7 @@ import { sources } from './icons/sources';
 import { sparkle } from './icons/sparkle';
 import { speaker } from './icons/speaker';
 import { speedometer } from './icons/speedometer';
+import { spotHealing } from './icons/spot-healing';
 import { square } from './icons/square';
 import { ssl } from './icons/ssl';
 import { staple } from './icons/staple';
@@ -450,6 +471,7 @@ import { taxi } from './icons/taxi';
 import { technical } from './icons/technical';
 import { teeth } from './icons/teeth';
 import { telescope } from './icons/telescope';
+import { text } from './icons/text';
 import { theater } from './icons/theater';
 import { themePicker } from './icons/theme-picker';
 import { thermometer } from './icons/thermometer';
@@ -465,6 +487,8 @@ import { transportBox } from './icons/transport-box';
 import { tree } from './icons/tree';
 import { trendDown } from './icons/trend-down';
 import { trendUp } from './icons/trend-up';
+import { triangleLeft } from './icons/triangle-left';
+import { triangleRight } from './icons/triangle-right';
 import { trip } from './icons/trip';
 import { trophy } from './icons/trophy';
 import { tune } from './icons/tune';
@@ -486,6 +510,7 @@ import { venus } from './icons/venus';
 import { verticalDots } from './icons/vertical-dots';
 import { video } from './icons/video';
 import { view } from './icons/view';
+import { viewOff } from './icons/view-off';
 import { virus } from './icons/virus';
 import { wait } from './icons/wait';
 import { wan } from './icons/wan';
@@ -500,6 +525,7 @@ import { workout } from './icons/workout';
 import { wrench } from './icons/wrench';
 import { yoga } from './icons/yoga';
 import { youtube } from './icons/youtube';
+import { zoomIn } from './icons/zoom-in';
 import { createIconRegistry } from './registry';
 
 export const iconMap: Record<IconName, ReactElement> = {
@@ -525,11 +551,13 @@ export const iconMap: Record<IconName, ReactElement> = {
     'caret-up': caretUp,
     'cd-dvd': cdDvd,
     'christmas-tree': christmasTree,
+    'clone-stamp': cloneStamp,
     'coat-rack': coatRack,
     'credit-card': creditCard,
     'crystal-globe': crystalGlobe,
     'deselect-all': deselectAll,
     'drying-machine': dryingMachine,
+    'file-add': fileAdd,
     'filetype-avi': filetypeAvi,
     'filetype-bat': filetypeBat,
     'filetype-c': filetypeC,
@@ -574,14 +602,19 @@ export const iconMap: Record<IconName, ReactElement> = {
     'gauge-medium': gaugeMedium,
     'glycemic-index': glycemicIndex,
     'ice-cream': iceCream,
+    'invert-selection': invertSelection,
     'ir-emitter': irEmitter,
     'light-bulb': lightBulb,
     'light-switch': lightSwitch,
+    'magic-wand': magicWand,
+    'marquee-ellipse': marqueeEllipse,
+    'marquee-rectangle': marqueeRectangle,
     'menu-hamburger': menuHamburger,
     'musical-note': musicalNote,
     'not-found': notFound,
     'office-desk': officeDesk,
     'old-person': oldPerson,
+    'paint-bucket': paintBucket,
     'police-man': policeMan,
     'romania-flag': romaniaFlag,
     'shopping-cart': shoppingCart,
@@ -590,6 +623,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     'signal-medium': signalMedium,
     'smoke-detector': smokeDetector,
     'soft-drink': softDrink,
+    'spot-healing': spotHealing,
     'stop-sign': stopSign,
     'theme-picker': themePicker,
     'toggle-off': toggleOff,
@@ -597,7 +631,10 @@ export const iconMap: Record<IconName, ReactElement> = {
     'transport-box': transportBox,
     'trend-down': trendDown,
     'trend-up': trendUp,
+    'triangle-left': triangleLeft,
+    'triangle-right': triangleRight,
     'vertical-dots': verticalDots,
+    'view-off': viewOff,
     'washing-machine': washingMachine,
     'water-leak': waterLeak,
     'website-crawl': websiteCrawl,
@@ -613,15 +650,29 @@ export const iconMap: Record<IconName, ReactElement> = {
     backup,
     balcony,
     basement,
+    blur,
+    brush,
     closet,
+    crop,
     digital,
+    eraser,
+    eyedropper,
     furniture,
+    gradient,
+    hand,
     insurance,
     job,
+    lasso,
     meet,
+    move,
     paint,
+    pencil,
     pension,
+    shapes,
+    sharpen,
+    smudge,
     sofa,
+    text,
     virus,
     api,
     appliances,
@@ -977,6 +1028,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     'external-link': externalLink,
     'ink-cartridge': inkCartridge,
     'lock-open': lockOpen,
+    'zoom-in': zoomIn,
     burst,
     confetti,
     angular,

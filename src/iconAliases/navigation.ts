@@ -36,4 +36,6 @@ export const aliasesNavigation: Record<string, string[]> = {
     ungroup: ['separate', 'split', 'detach', 'break-apart', 'release', 'expand'],
     'vertical-dots': ['menu', 'more', 'options', 'kebab'],
     view: ['eye', 'see', 'show', 'display', 'preview', 'look'],
+    'triangle-left': ['previous', 'back', 'left', 'arrow', 'prev'],
+    'triangle-right': ['next', 'forward', 'right', 'arrow', 'play'],
 };
