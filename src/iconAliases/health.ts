@@ -1,5 +1,6 @@
 export const aliasesHealth: Record<string, string[]> = {
     blood: ['medical', 'health', 'emergency', 'donor', 'red'],
+    'blood-pressure': ['hypertension', 'tensiometer', 'sphygmomanometer', 'pressure', 'cuff', 'vitals', 'cardio'],
     bones: ['skeleton', 'orthopedic', 'bone', 'fracture', 'skeletal', 'osteo'],
     brain: ['neurology', 'mind', 'cerebral', 'cognition', 'head', 'thinking'],
     dental: ['tooth', 'teeth', 'dentist', 'oral', 'mouth', 'molar'],
@@ -26,4 +27,5 @@ export const aliasesHealth: Record<string, string[]> = {
     surgery: ['medical', 'operation', 'hospital', 'scalpel'],
     teeth: ['dentist', 'medical', 'oral', 'health'],
     thermometer: ['temperature', 'heat', 'cold', 'weather'],
+    'weight-scale': ['weight', 'bathroom-scale', 'body-weight', 'kg', 'mass', 'bmi', 'vitals'],
 };

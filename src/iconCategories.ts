@@ -197,6 +197,7 @@ export const iconCategoryDefinitions: IconCategory[] = [
         icons: [
             'blood',
             'bones',
+            'blood-pressure',
             'brain',
             'dental',
             'digestive',
@@ -222,6 +223,7 @@ export const iconCategoryDefinitions: IconCategory[] = [
             'teeth',
             'stethoscope',
             'thermometer',
+            'weight-scale',
         ],
     },
     {

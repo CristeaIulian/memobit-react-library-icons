@@ -47,6 +47,7 @@ import { benefit } from './icons/benefit';
 import { bill } from './icons/bill';
 import { birthdayCake } from './icons/birthday-cake';
 import { blood } from './icons/blood';
+import { bloodPressure } from './icons/blood-pressure';
 import { blueberries } from './icons/blueberries';
 import { blur } from './icons/blur';
 import { bones } from './icons/bones';
@@ -519,6 +520,7 @@ import { washingMachine } from './icons/washing-machine';
 import { waterLeak } from './icons/water-leak';
 import { web } from './icons/web';
 import { websiteCrawl } from './icons/website-crawl';
+import { weightScale } from './icons/weight-scale';
 import { wifi } from './icons/wifi';
 import { wind } from './icons/wind';
 import { workout } from './icons/workout';
@@ -539,6 +541,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     'battery-full': batteryFull,
     'battery-half': batteryHalf,
     'birthday-cake': birthdayCake,
+    'blood-pressure': bloodPressure,
     'broken-heart': brokenHeart,
     'button-device': buttonDevice,
     'calendar-day': calendarDay,
@@ -638,6 +641,7 @@ export const iconMap: Record<IconName, ReactElement> = {
     'washing-machine': washingMachine,
     'water-leak': waterLeak,
     'website-crawl': websiteCrawl,
+    'weight-scale': weightScale,
     active,
     afternoon,
     ajax,
