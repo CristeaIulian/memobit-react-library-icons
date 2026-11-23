@@ -87,6 +87,29 @@ Vite trim plugin.
 To add one: put `src/animated/<kebab-name>.tsx` next to `running.tsx`, then add it to
 `animatedIconMap` and `animatedIconDescriptions` in `src/animated.ts`.
 
+### Coloured icons
+
+```tsx
+import { ColoredIcon } from '@memobit/libs';
+
+<ColoredIcon name="car" backdrop />;
+```
+
+Multi-colour variants of icons in the main set, behind `@memobit/icons/colored`, for places
+where an icon should be told apart at a glance, such as an app launcher's tiles. Each variant
+is keyed by the name of the single-colour icon it redraws, so any icon can gain one. It exports
+`coloredIconMap`, the `ColoredIconName` union and `getColoredIcon(name)`, which returns the
+drawing and its `hue` (the main colour, for a matching backdrop) or `undefined`. `ColoredIcon`
+falls back to the single-colour icon for a name with no variant.
+
+They draw with fixed colours from `src/colored/palette.ts` rather than `currentColor`, may use
+strokes, give light parts an `edge` outline so they hold on a white card, and stay out of
+`iconMap`, the categories and the Vite trim plugin.
+
+To add one: put `src/colored/<name>.tsx` next to the others, named after the single-colour
+icon it redraws, using only `palette` colours (add one there if needed), then add it to
+`coloredIconMap` in `src/colored.ts` with its hue.
+
 ## Adding an icon
 
 1. Add `src/icons/<kebab-name>.tsx` exporting a camelCase const.

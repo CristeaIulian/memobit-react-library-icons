@@ -39,6 +39,10 @@
       "types": "./dist/animated.d.ts",
       "import": "./dist/animated.js"
     },
+    "./colored": {
+      "types": "./dist/colored.d.ts",
+      "import": "./dist/colored.js"
+    },
     "./map": {
       "types": "./dist/map.d.ts",
       "import": "./dist/map.js"
